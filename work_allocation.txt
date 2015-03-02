@@ -1,0 +1,32 @@
+4.1: List access channels for humans and other systems
+4.2: Quality requirements for:
+	-performance
+	-reliability
+	-scalability
+	-security
+	-flexibility
+	-maintainability
+	-auditability/monitorability
+	-integrability
+	-cost
+	-usability
+4.3: Integration requirements for external systems:
+	-integration channel used
+	-protocols used
+	-API specifications (in the form of UML interfaces)
+	 and/or 
+	technology-specific API specifications
+	-any quality requirements for integration:
+		-performance
+		-reliability
+		-scalability
+		-security
+		-flexibility
+		-maintainability
+		-auditability/monitorability
+		-integrability
+		-cost
+		-usability
+4.4: Architecture constraints: (client specified constraints)
+	-neccessary technology
+	-architectural patterns/frameworks used
