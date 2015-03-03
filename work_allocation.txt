@@ -1,15 +1,18 @@
 4.1: List access channels for humans and other systems
 4.2: Quality requirements for:
-	-performance
-	-reliability
-	-scalability
-	-security
-	-flexibility
-	-maintainability
-	-auditability/monitorability
-	-integrability
-	-cost
-	-usability
+	Critical:
+		-usability
+		-scalability
+	Important:
+		-auditability/monitorability
+		-reliability
+		-security
+		-maintainability
+	Nice to have:
+		-performance
+		-flexibility
+		-integrability
+		-cost
 4.3: Integration requirements for external systems:
 	-integration channel used
 	-protocols used
