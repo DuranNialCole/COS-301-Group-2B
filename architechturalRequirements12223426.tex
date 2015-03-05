@@ -23,8 +23,24 @@ The purpose of this section is to describe the software architecture requirement
 		\end{itemize}
 
 Other systems should be able to access the services offered by the system through either restful or SOAP-based web services.
-		
+		\subsubsection{Integration requirements}
+		The system will need to be able to access
+		\begin{itemize}
+			\item the CS LDAP server to retrieve student and personal details and class lists.
+			\item the CS MySQL database to access course information.
+		\end{itemize}
+
+The system needs to be able to integrate with a generic LDAP data structure so as to be able to be used by other institutions at a later stage.
+
 	\subsection{Architectural responsibilities}
+	The architectural responsibilities include the responsibilities of providing an infrastructure for:
+	\begin{enumerate}
+		\item a web access channel,
+		\item hosting and providing the execution environment for the services/business logic of the system,
+		\item persisting and providing access to domain objects,
+		\item integrating with an LDAP repository.
+		\item 
+	\end{enumerate}
 		 
 	\subsection{Quality requirements}
 		 
