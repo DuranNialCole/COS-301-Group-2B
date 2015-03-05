@@ -37,14 +37,52 @@
 	\subsection{Architectural Scope}
 	\subsection{Quality Requirements}
 	\subsection{Integration and access channel requirements}
-	\subsection{Architectural Constraints}
-
-		
+	\subsection{Architectural Constraints}		
 
 \section{Architectural patterns or styles}
 \section{Architectural tactics or strategies}
 \section{Use of reference architectures and frameworks}
 \section{Access and integration channels}
+	\subsection{Integration Channel Used}
+		\subsubsection{REST - Representational State Transfer}
+		\begin{itemize}
+			\item Uses standard HTTP and thus simpler to use.
+		 	\item Allows different data formats where as SOAP only allows XML.
+			\item Has JSON support
+				\begin{itemize}
+					\item faster parsing.				
+				\end{itemize}			 
+			\item Better performance and scalability with the ability to cache reads.
+			\item Protocol Independent, can use any protocol which has a standardised URI scheme.		
+		\end{itemize}
+	\subsection{Protocols}
+		\subsubsection{HTTP - Hypertext Transfer Protocol}
+			\begin{itemize}
+				\item Standard web language.
+				\item Easy to write pages.
+			\end{itemize}
+		\subsubsection{PHP}
+			\begin{itemize}
+				\item Allows dynamic pages to be built.
+				\item Easy integration of JavaScript and HTML with PHP functions.
+			\end{itemize}
+		\subsubsection{IP - Internet Protocol}	
+			\begin{itemize}
+				\item Allows Communications between users.
+				\item In charge of sending, receiving and addressing data packets.
+			\end{itemize}				
+		\subsubsection{SMTP - Simple Mail Transfer Protocol}
+			\begin{itemize}
+				\item Sends emails.
+				\item MIME (Multi-purpose Internet Mail Extensions) which allows SMTP to send multimedia files.
+			\end{itemize}
+		\subsubsection{TSL - Transport Layer Security}
+			\begin{itemize}
+				\item Alternative to SSL
+				\item Newer and more secure version of SSL.
+			\end{itemize}
+		
 \section{Technologies}
+	
 
 \end{document}
