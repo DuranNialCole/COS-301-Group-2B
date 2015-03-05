@@ -43,6 +43,27 @@ The system needs to be able to integrate with a generic LDAP data structure so a
 	\end{enumerate}
 		 
 	\subsection{Quality requirements}
+		\subsubsection{Usability}
+		\begin{itemize}
+			\item The average student should be able to use the system without any prior training.
+			\item Initially only English needs to be supported, but the system must allow for translations to the other official languages of the University of Pretoria to be added at a later stage.
+		\end{itemize}
+	
+		\subsubsection{Scalability}
+		\begin{itemize}
+			\item The system must be able to operate effectively under the load of all registered students within the department of Computer Science. (+-2000 concurrent users)
+		\end{itemize}
+		
+		\subsubsection{Auditability}
+		\begin{itemize}
+			\item Each action on the system must be recorded in an audit log that can later be viewed and queried.
+			\item Information to be recorded must include:
+			\begin{itemize}
+				\item The identity of the individual carrying out the action
+				\item A description of the action
+				\item When the action was carried out
+			\end{itemize}
+		\end{itemize}
 		 
 	\subsection{ Architecture constraints}
  
