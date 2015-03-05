@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+\begin{document}
+\begin{titlepage}
+\title{Architectural Requirements}
+\author{10353403}
+\maketitle
+\end{titlepage}
+
+\section{Access Channels}
+	\subsection*{Human access channel}
+		\begin{itemize}
+			\item The system must be accessible via web browsers and web interfaces.
+			\item Users must be able to use their mobile devices and desktop to access the system.
+			\item The system must accommodate the thick client web based in a sense that the user can perform basic required functionality at client-side without depending on the server.
+		\end{itemize}
+\section{Quality Requirements}
+	\subsection*{Scalability}
+	\begin{itemize}
+		\item The system must be able to scale to handle more than one loggedin user concurrently.
+		\item The system must not restrict the number of threads,posts and comments to be created.
+	\end{itemize}
+	\subsubsection*{Usability}
+	\begin{itemize}
+		\item An average user must be ble to use the system without any training.
+		\item The system must support multiple languages. It must also support all official languages used in the University.
+	\end{itemize}
+	\subsubsection*{Security}
+	\begin{itemize}
+		\item All system functionality is only accessible to users who can be authenticated through the LDAP system.
+		\item The system must make certain that only priviledged users(such as lecturers) can create buzz space.
+		\item The system must make certain that only registered users on LDAP system can create threads,posts and comments.
+	\end{itemize}
+	\subsection*{Auditability}
+		\begin{itemize}
+			\item The system must create a summary of actions that are taken by the users(i.e rating posts,tagging other posts).
+			\item The summary should not be editable.
+		\end{itemize}
+	\subsection*{Integrability}
+		\begin{itemize}
+			\item The system must be pluggable.
+			\item The system must easily integrate with CS LDAP, CS website and Hamster marking system.
+		\end{itemize}
+		
+	\section{Architectural patterns and styles}
+\end{document} 
+
+	
