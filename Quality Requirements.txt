@@ -1,0 +1,32 @@
+Access Channels
+
+	Users can make use of modern web browsers (Safari, Google Chrome, Firefox, Opera) to
+	access the system or through the use of android mobile devices as well.
+	
+Quality Requirements.
+
+Scalability: The system should be able to accommodate growth in the capable manner
+* Accommodate guest users.
+* Accommodate the growth in the number of threads
+
+Performance:
+* Quick response time for every event e.g. Logging in, creating threads, generating reports etc.
+
+Maintainability: Independence of modules in the system so that it is easier to isolate defects and replacing faulty components
+* Add-ons instead of one module with every system component.
+
+Reliability/ Availability: (Increase in reliability is an increase in availability)
+* Correct results generated e.g. Average Marks or Number of threads in system.
+
+Security:
+* Use LDAP to verify user’s
+
+Usability:
+* Simple yet informative interface.
+* Easy to use as well.
+* Improve understanding of concepts (Main Objective).
+
+Monitorability and Auditability :
+Which information should be monitored??
+* Each time a user accesses the system.
+* The threads that are created/ deleted
