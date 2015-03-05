@@ -1,0 +1,10 @@
+1.1.1 Human access channels:
+•	Must run on all major web browsers (Firefox, Internet Explorer, Opera, Chrome, Safari)
+•	Must be able to access from computer (desktop & laptop), tablets and phones (i.e. mobile/Android devices)
+•	Must be able to able to handle thick clients (like a student’s home PC) and thin clients (like the PC’s in the Informatorium)
+•	Must support all major web standards such as the standards published by the International Organization for Standardization (ISO), Request for Comments (RFC), Document Object Models (DOM), proper use of HTTP, stylesheets (especially Cascading Style Sheets (CSS)) and markup languages, such as Hypertext Markup Language (HTML) and Extensible Hypertext Markup Language (XHTML).
+1.1.2. System access channels:
+•	The Buzzspace can be accessed through a direct webpage (i.e. using http) or through a link from either the CS webpage or the UP portal webpage.
+
+1.2. Integration channels:
+•	The Buzz space must be integrated seamlessly with both the CS website and the UP portal so as to communicate information about the various modules both inside and outside the Computer Science Department.
