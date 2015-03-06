@@ -1,0 +1,25 @@
+1 Technologies
+1.1 Programming languages
+	-Java Persistence API (JPA) is a Java programming language application programming 
+	interface specification that describes the management of relational data in applications 
+	using Java Platform, Standard Edition and Java Platform, Enterprise Edition.
+1.2 Database technologies
+	-Java Persistence query language (JPQL) is used to define searches against persistent entities
+	independent of the mechanism used to store those entities. As such, JPQL is "portable", 
+	and not constrained to any particular data store.
+1.3 Application servers
+	The application server chosen will be the Apache server. Apache server
+	is open source allowing modification if required, it is cost effective due to the nature of being
+	open source. It is portable allowing it to be installed on any system.
+1.4 Testing modules
+	The build tool Apache Maven(Software project management) will be used for unittesting.
+	Maven can run unittest which allows the sharing and integration of code between seperate tests 
+	such as the start up and shutdown of testing. It allows Command-Line interface as well as code 
+	imbedded testing. Unittest has functionality to re-use old test code instead of designing the test code over.
+1.4 Operating System
+	-Linux
+1.5 Other
+	-JavaEE
+	-JSF
+	-HTML
+	-
