@@ -2,18 +2,28 @@
 \BOOKMARK [1][-]{section.2}{Architecture Requirements}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Architectural Scope}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Quality Requirements}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Integration and access channel requirements}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Architectural patterns or styles}{}% 7
-\BOOKMARK [1][-]{section.4}{Architectural tactics or strategies}{}% 8
-\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 9
-\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 10
-\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 11
-\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 12
-\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 13
-\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 14
-\BOOKMARK [3][-]{subsubsection.6.2.2}{PHP}{subsection.6.2}% 15
-\BOOKMARK [3][-]{subsubsection.6.2.3}{IP - Internet Protocol}{subsection.6.2}% 16
-\BOOKMARK [3][-]{subsubsection.6.2.4}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 17
-\BOOKMARK [3][-]{subsubsection.6.2.5}{TSL - Transport Layer Security}{subsection.6.2}% 18
-\BOOKMARK [1][-]{section.7}{Technologies}{}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Scalability}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Performance requirements}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Maintainability}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Availability}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Reliability}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Security}{subsection.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.7}{Monitorability and Auditability}{subsection.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.8}{Testability}{subsection.2.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.2.9}{Usability}{subsection.2.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.2.10}{Integrability}{subsection.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.3}{Integration and access channel requirements}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 16
+\BOOKMARK [1][-]{section.3}{Architectural patterns or styles}{}% 17
+\BOOKMARK [1][-]{section.4}{Architectural tactics or strategies}{}% 18
+\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 19
+\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 21
+\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 22
+\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 23
+\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 24
+\BOOKMARK [3][-]{subsubsection.6.2.2}{PHP}{subsection.6.2}% 25
+\BOOKMARK [3][-]{subsubsection.6.2.3}{IP - Internet Protocol}{subsection.6.2}% 26
+\BOOKMARK [3][-]{subsubsection.6.2.4}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 27
+\BOOKMARK [3][-]{subsubsection.6.2.5}{TSL - Transport Layer Security}{subsection.6.2}% 28
+\BOOKMARK [1][-]{section.7}{Technologies}{}% 29

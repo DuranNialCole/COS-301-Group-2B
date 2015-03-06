@@ -38,45 +38,54 @@
 	\subsection{Quality Requirements}
 		\subsubsection{Scalability}
 			\begin{itemize} 
-				\item Manage resource demand
-				\item Scale out resources
-				\item The system must be able to operate effectively under the load of all registered students within the department of Computer Science. (+-2000 concurrent users)
+				\item Manage resource demand.
+				\item Scale out resources.
+				\item The system must be able to operate effectively under the load of all registered students within the department of Computer Science and guest users.
 			\end{itemize}
 			
 		\subsubsection{Performance requirements}
 			\begin{itemize}
-				\item Throughput: The rate at which incoming requests are completed
-				\item Manage resource demand
-				\item Response times
+				\item Throughput: The rate at which incoming requests are completed.
+				\item Manage resource demand.
+				\item Minimise response time.
+			
 			\end{itemize}
 		\subsubsection{Maintainability}
 			\begin{itemize}
-				\item Regression
-				\item Corrective maintenance: Reactive modification of a software product performed after delivery to correct discovered problems.
-				\item Adaptive maintenance: Modification of a software product performed after delivery to keep a software product usable in a changed or changing environment.
-				\item Perfective maintenance: Modification of a software product after delivery to improve performance or maintainability.
-				\item Preventive maintenance: Modification of a software product after delivery to detect and correct latent faults in the software product before they become effective faults.
+				\item Ability to back track to a state in which system was safe.
+				\item Corrective maintenance: Reactive modification of the system performed after delivery to correct discovered problems.
+				\item Adaptive maintenance: Modification of the Buzz system performed after delivery to keep the system usable in a changed or changing environment.
+				\item Perfective maintenance: Modification of the Buzz system after delivery to improve performance or maintainability.
+				\item Preventive maintenance: Modification of the Buzz system after delivery to detect and correct latent faults in the system before they become effective faults.
 			\end{itemize}
-		\subsubsection{Reliability and Availability}
+		\subsubsection{Availability}
 			\begin{itemize}
-				\item Prevent faults
-				\item Detect faults
-				\item Recover from faults
+				\item Prevent faults.
+				\item Detect faults.
+				\item Recover from faults.
+				\item Cross platform.
+				\item Cross browser.
 			\end{itemize}
+			
+		\subsubsection{Reliability}
+			\begin{itemize}
+				\item Prevent faults.
+				\item Detect faults.
+				\item Recover from faults.
+			\end{itemize}
+			
 		\subsubsection{Security}
 			\begin{itemize}
-				\item Detect attacks 
-				\item Resist attacks
-				\item Recover from attack
-				\item Authentication
-				\item Authorization
-				\item Minimize access
-				\item All communication of sensitive data must be done securely using HTTPS.
+				\item Detect attacks from unwanted and unauthorised users.
+				\item Resist attacks from unwanted and unauthorised users.
+				\item Recover from attack from unwanted and unauthorised users.
+				\item Minimize access and permissions given to users who do not have the required privileges.
+				\item All communication of sensitive data must be done securely through encryption and secure channels.
 				\item All system functionality is only accessible to users who can be successfully authenticated through the LDAP system used by the department of Computer Science.
 			\end{itemize}
 		\subsubsection{Monitorability and Auditability}
 			\begin{itemize}
-				\item Logs: Logs system activities such as the time a user logged into/out of the system
+				\item Logs: Logs system activities such as the time a user logged into/out of the system.
 							\item Each action on the system must be recorded in an audit log that can later be viewed and queried.
 				\item Information to be recorded must include:
 				\begin{itemize}
@@ -87,11 +96,14 @@
 			\end{itemize}
 		\subsubsection{Testability}
 			\begin{itemize}
-				\item Controllability: The degree to which it is possible to control the state of the component under test as required for testing.
+				\item Controllability: The degree to which it is possible to control the state of the component under test as required for testing by using Test driven development.
 				\item Understandability: The degree to which the component under test is documented or self-explaining.
-				\item Test driven development
-				\item that the service is provided if all pre-conditions are met, and
-				\item that all post-conditions hold true once the service has been provided.
+				\item Each service provided by the system must be testable through a unit test that tests:
+				\begin{itemize}
+					\item That the service is provided if all pre-conditions are met, and
+					\item That all post-conditions hold true once the service has been provided.
+				\end{itemize}
+				
 			\end{itemize}
 		\subsubsection{Usability}
 			\begin{itemize}
