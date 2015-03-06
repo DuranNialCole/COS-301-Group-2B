@@ -1,0 +1,57 @@
+1.3 Availability Tactics
+	-Fault Detection
+		-Ping / Echo
+			Ping / Echo refers to an asynchronous request/response message pair exchanged between nodes, used to determine reachability and the round-trip delay through the associated network path. We can use it to ensure that the students are connected and up to date with the latest version of a Buzzspace before they post something that might already have been posted.
+			
+		-System Monitor
+			Watchdog is a hardware-based counter-timer that is periodically reset by software. Upon expiration it indicates to the system monitor of a fault incurrence in the process.
+			
+			Heartbeat is a periodic message exchange between the system monitor and process. It indicates to system monitor when a fault is incurred in the process.
+			
+			Both of these can be used to prevent zombie threads (ones that expired or crashed on the client side) to clog up the server by taking up valuable resources.
+		
+		-Exception Detection
+			System Exceptions are raised by the system when it detects a fault, such as divide by zero, bus and address faults and illegal program instructions.
+			
+			Parameter Fence incorporates an A priority data pattern (such as 0xdeadbeef) placed immediately after any variable-length parameters of an object. It allows for runtime detection of overwriting the memory allocated for the object's variable-length parameters.
+			
+			Parameter Typing employs a base class that defines functions that add, find, and iterate over Type-Length-Value (TLV) formatted message parameters and uses strong typing to build and parse messages.
+			
+			All exceptions needs to be handled in order to prevent any critical errors or failures which can lead to a system compromise.
+		
+	-Fault Recovery
+		-Preparation and Repair
+			-Voting
+				Triple Modular Redundancy is three identical processing units, each receiving identical inputs, whose output is forwarded to voting logic. It then detects any inconsistency among the three output states, which is treated as a system fault.
+			
+			-Active Redundancy
+				Configuration wherein all of the nodes (active or redundant spare) in a protection group receive and process identical inputs in parallel. The redundant spare possesses an identical state to the active processor, so recovery and repair can occur in milliseconds.
+			
+			-Passive Redundancy
+				Configuration wherein only the active members of the protection group process input traffic, with the redundant spare(s) receiving periodic state updates. This achieves a balance between the more highly available but more complex Active Redundancy tactic and the less available but significantly less complex Spare tactic.
+			
+			-Spare
+				Configuration wherein the redundant spares of a protection group remain out of service until a fail-over occurs. Then it initiates the power-on-reset procedure on the redundant spare prior to its being placed in service.
+			
+		-Reintroduction
+			-Shadow
+				Operates a previously failed or in-service upgraded component in a “shadow mode” for a predefined duration of time and when a problem is incurred it reverts the component back to an active role.
+			
+			-State Resynchronization 
+				When it's implemented as a refinement to the Active Redundancy tactic, it occurs organically as active and standby components that each receive and process identical inputs in parallel.
+				When it's implemented as a refinement to the Passive Redundancy tactic, it's based solely on periodic state information transmitted from the active component(s) to the standby component and involves the Rollback tactic.
+				It then allows the system's control element to dynamically recover its control plane state from its network peers and periodically compares the state of the active and standby components to ensure synchronization.
+			
+			-Rollback
+				Rollback is a checkpoint based tactic that allows the system state to be reverted to the most recent consistent set of checkpoints.
+			
+	-Fault Prevention
+		-Removal from Service
+			Places a system component in an out-of-service state that allows for mitigating potential system failures before their accumulation affects the service.
+		
+		-Transactions
+			Ensures a consistent and durable system state. The Atomic Commit Protocol can be used and it is most commonly implemented by the two-phase commit.
+		
+		-Process Monitor
+			Monitors the state of health of a system process and ensures that the system is operating within its nominal operating parameters.
+		
