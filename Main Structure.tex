@@ -30,9 +30,9 @@
 \clearpage
 
 \newpage
+\section{Introduction}	
 
-\section{Introduction}
-	
+\newpage
 \section{Architecture Requirements}
 	\subsection{Architectural Scope}
 	\subsection{Quality Requirements}
@@ -90,8 +90,11 @@
 				\item Controllability: The degree to which it is possible to control the state of the component under test as required for testing.
 				\item Understandability: The degree to which the component under test is documented or self-explaining.
 				\item Test driven development
-				\item that the service is provided if all pre-conditions are met, and
-				\item that all post-conditions hold true once the service has been provided.
+				\item Each service provided by the system must be testable through a unit test that tests:
+				\begin{itemize}
+					\item that the service is provided if all pre-conditions are met, and
+					\item that all post-conditions hold true once the service has been provided.
+				\end{itemize}
 			\end{itemize}
 		\subsubsection{Usability}
 			\begin{itemize}
@@ -104,7 +107,7 @@
 			\end{itemize}
 		\subsubsection{Integrability}
 				\begin{itemize}
-					\item 
+					\item Must be able to intergrate with existing systems and systems which may want to be added.
 				\end{itemize}
 				
 	\subsection{Integration and access channel requirements}
@@ -113,6 +116,7 @@
 \section{Architectural patterns or styles}
 \section{Architectural tactics or strategies}
 \section{Use of reference architectures and frameworks}
+\newpage
 \section{Access and integration channels}
 	\subsection{Integration Channel Used}
 		\subsubsection{REST - Representational State Transfer}
