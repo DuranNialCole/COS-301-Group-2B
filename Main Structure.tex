@@ -35,7 +35,7 @@
 		\item The architectural scope.
 		\item Quality requirements.
 		\item The integration and access channel requirements.
-		\item The architectural consrtaints.
+		\item The architectural constraints.
 		\item Architectural patterns and styles used.
 		\item The architectural tactics and strategies used.
 		\item The use of reference architectures and frameworks.
@@ -57,7 +57,7 @@
 			\begin{itemize}
 				\item Throughput: The rate at which incoming requests are completed.
 				\item Manage resource demand.
-				\item Minimise response time.
+				\item Minimize response time.
 			\end{itemize}
 		\subsubsection{Maintainability}
 			\begin{itemize}
@@ -118,7 +118,7 @@
 			\begin{itemize}
 				\item Efficiency
 				\item Ease of use
-				\item Easy to navigate between the system's various webpages.
+				\item Easy to navigate between the system's various web pages.
 				\item Satisfaction (How pleasant is it to use the system?)
 				\item The average student should be able to use the system without any prior training.
 				\item Initially only English needs to be supported, but the system must allow for translations to the other official languages of the University of Pretoria to be added at a later stage.
@@ -134,17 +134,53 @@
 				\begin{itemize}
 					\item Must run on all major web browsers (Firefox, Internet Explorer, Opera, Chrome, Safari)
 					\item Must be able to access from computer (desktop \& laptop), tablets and phones (i.e. mobile/Android devices)
-					\item Must be able to able to handle thick clients (like a student’s home PC) and thin clients (like the PC’s in the Informatorium)
+					\item Must be able to able to handle thick clients (like a student's home PC) and thin clients (like the PC's in the Informatorium)
 					\item Must support all major web standards such as the standards published by the International Organization for Standardization (ISO), Request for Comments (RFC), Document Object Models (DOM), proper use of HTTP, stylesheets (especially Cascading Style Sheets (CSS)) and markup languages, such as Hypertext Markup Language (HTML) and Extensible Hypertext Markup Language (XHTML).
 				\end{itemize}
 				\subsubsection{System access and integration channels}
 				\begin{itemize}
-					\item The Buzz system can be accessed through a direct webpage (i.e. using http) or through a link from the CS webpage.
+					\item The Buzz system can be accessed through a direct web page (i.e. using http) or through a link from the CS web page.
 					\item The Buzz system must be integrated seamlessly with both the CS LDAP server (to retrieve class lists and student information) and the CS MySQL database to access course and module details.
 				\end{itemize}
 	\subsection{Architectural Constraints}		
 
 \section{Architectural patterns or styles}
+	\subsection{Layered Architectural Style}
+	\begin{itemize}
+		\item The Buzz system will use ISO OSI layers and its communication protocols. For example,when accessing the Buzz space the user opens the web browser and use HTTP to directly request the Buzz space web page. This happens on the application layer.
+		\item Layered architectural style supports N-tier architectural style which can improve scalability.
+		\item The main benefits of layered architectural style:
+			\begin{itemize}
+			\item it abstracts the view of the system as whole while providing enough detail to understand the roles and responsibilities of individual layers and the relationship between them.
+			\item separation of concerns which improves maintainability of the system.
+			\item it improves performance and fault tolerance.
+			\item it increases testability.
+			\end{itemize}
+	\end{itemize}
+	\subsection{Virtual Machine Pattern}
+	\begin{itemize}
+		\item The Buzz system must be portable to run on any computing platform.That is, the system must be able to run on home desktop, PCs on campus, and different mobile devices. It must also run on different web browsers on different operating systems.
+		\item Virtual machine pattern provides:
+		\begin{itemize}
+			\item portability
+			\item pluggability
+		\end{itemize}		 
+	\end{itemize}
+	\subsection{Client/Server Architectural Style}
+	\begin{itemize}
+		\item Client/Server allows multiple clients to access the system using N-tier 		architectural style.The benefit of using N-tier architectural style is that it improves the scalability of the system.
+		\item The server side is the back-end of the system which manages the centralized data and access to the database from CS LDAP. The aim of having the back-end manages the data is to achieve higher security.
+	\end{itemize}
+	\subsection{N-tier/3-tier Architectural Style}
+	\begin{itemize}
+		\item The N-tier/3-tier architectural style provide improved:
+		\begin{itemize}
+			\item scalability
+			\item availability
+			\item maintainability
+		\end{itemize}
+		\item And resource utilization
+	\end{itemize}
 \section{Architectural tactics or strategies}
 \section{Use of reference architectures and frameworks}
 \newpage
