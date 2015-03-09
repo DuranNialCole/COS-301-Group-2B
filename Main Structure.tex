@@ -217,6 +217,132 @@ Alternative Architectural Constraints:
 		\item And resource utilization
 	\end{itemize}
 \section{Architectural tactics or strategies}
+
+	
+	
+	\subsection{Fault Detection}
+		\subsubsection{Ping / Echo}			
+			\begin{itemize}		
+				\item Ping / Echo refers to an asynchronous request/response message pair exchanged between nodes, used to determine reachability and the round-trip delay through the associated network path. We can use it to ensure that the students are connected and up to date with the latest version of a Buzzspace before they post something that might already have been posted.
+				\item The quality requirements addressed:
+					\begin{itemize}
+						\item Security, as it can confirms on security policies between ports and that no faults have occurred.
+						\item Availability, allows us to note whether server is available or not.
+						\item Reliability, detected faults can then be acted upon. 
+						\item Monitorability and Audibility, To log faults detected.
+						\item Testability, allows errors to be found and dealt with.
+					\end{itemize}
+			\end{itemize}
+			
+		\subsubsection{System Monitor}
+			\begin{itemize}
+				\item Watchdog is a hardware-based counter-timer that is periodically reset by software. Upon expiration it indicates to the system monitor of a fault occurrence in the process.
+				
+				\item Heartbeat is a periodic message exchange between the system monitor and process. It indicates to system monitor when a fault is incurred in the process.
+				
+				\item Both of these can be used to prevent zombie threads (ones that expired or crashed on the client side) to clog up the server by taking up valuable resources.
+				
+				\item The quality requirements addressed:
+				\begin{itemize}
+					\item Availability, allows us to note whether server is available or not and view current system processes.
+					\item Monitorability and Audibility, To monitor system and log activities and changes.
+				\end{itemize}
+			\end{itemize}	
+		\subsubsection{ Exception Detection }
+			\begin{itemize}
+			\item System Exceptions are raised by the system when it detects a fault, such as divide by zero, bus and address faults and illegal program instructions.
+			
+			\item Parameter Fence incorporates an A priority data pattern (such as 0xdeadbeef) placed immediately after any variable-length parameters of an object. It allows for runtime detection of overwriting the memory allocated for the object's variable-length parameters.
+			
+			\item Parameter Typing employs a base class that defines functions that add, find, and iterate over Type-Length-Value (TLV) formatted message parameters and uses strong typing to build and parse messages.
+			
+			\item All exceptions needs to be handled in order to prevent any critical errors or failures which can lead to a system compromise.
+			
+			\item The quality requirements addressed:
+			\begin{itemize}
+				\item Security, Allows us to detect possible security errors and threats such as: buffer overflows, possible attacks, etc.
+				\item Maintainability, Allows us to find and fix exceptions which could further lead to system errors and problems.
+				\item Monitorability and Audibility, To monitor system and log all exceptions thrown by either system or user activities.
+				\item Testability, allows exceptions to be found and dealt with.
+			\end{itemize}
+		\end{itemize}
+
+	\subsection{Fault Recovery}
+		
+		
+		\subsubsection{Preparation and Repair}
+		\begin{itemize}
+		
+		\item Voting
+		\begin{itemize}
+		\item Triple Modular Redundancy is three identical processing units, each receiving identical inputs, whose output is forwarded to voting logic. It then detects any inconsistency among the three output states, which is treated as a system fault.
+		\end{itemize}
+		
+		
+		\item Active Redundancy
+		\begin{itemize}
+		\item Configuration wherein all of the nodes (active or redundant spare) in a protection group receive and process identical inputs in parallel. The redundant spare possesses an identical state to the active processor, so recovery and repair can occur in milliseconds.
+		\end{itemize}
+		
+		\item Passive Redundancy
+		\begin{itemize}
+		\item Configuration wherein only the active members of the protection group process input traffic, with the redundant spare(s) receiving periodic state updates. This achieves a balance between the more highly available but more complex Active Redundancy tactic and the less available but significantly less complex Spare tactic.
+		\end{itemize}
+		
+		\item Spare
+		\begin{itemize}
+		\item Configuration wherein the redundant spares of a protection group remain out of service until a fail-over occurs. Then it initiates the power-on-reset procedure on the redundant spare prior to its being placed in service.
+		\end{itemize}
+		
+		\item The quality requirements addressed:
+		\begin{itemize}
+			\item Monitorability and Auditability, faults are detected and logged and allows us to backtrack to an earlier state or prevent faults and recover.
+			\item Availability, it allows the most current operational state to be available.
+			\item Maintainability, allows us to backtrack to a previous working state. 
+		\end{itemize}
+		
+		\subsubsection{Reintroduction}
+		\item Shadow
+		\begin{itemize}
+		\item Operates a previously failed or in-service upgraded component in a “shadow mode” for a predefined duration of time and when a problem is incurred it reverts the component back to an active role.
+		\end{itemize}
+		
+		\item State Resynchronization 
+		\begin{itemize}
+		\item When it's implemented as a refinement to the Active Redundancy tactic, it occurs organically as active and standby components that each receive and process identical inputs in parallel.
+		\item When it's implemented as a refinement to the Passive Redundancy tactic, it's based solely on periodic state information transmitted from the active component(s) to the standby component and involves the Rollback tactic.
+		It then allows the system's control element to dynamically recover its control plane state from its network peers and periodically compares the state of the active and standby components to ensure synchronization.
+		\end{itemize}
+		
+		\item Rollback
+		\begin{itemize}
+		\item Rollback is a checkpoint based tactic that allows the system state to be reverted to the most recent consistent set of checkpoints.
+		\end{itemize}
+		
+		\item The quality requirements addressed:
+		\begin{itemize}
+			\item Testability, allows the system to remain intact while new components are tested.
+			\item Maintainability, allows us to backtrack to a state where components where working correctly.
+		\end{itemize}
+		
+	\end{itemize}
+	
+	\subsection{Fault Prevention}
+	\begin{itemize}
+		
+		
+		\subsubsection Removal from Service
+		Places a system component in an out-of-service state that allows for mitigating potential system failures before their accumulation affects the service.
+		
+		\subsubsection Transactions
+		Ensures a consistent and durable system state. The Atomic Commit Protocol can be used and it is most commonly implemented by the two-phase commit.
+		
+		\subsubsection Process Monitor
+		Monitors the state of health of a system process and ensures that the system is operating within its nominal operating parameters.
+	\end{itemize}
+
+
+
 \section{Use of reference architectures and frameworks}
 \newpage
 \section{Access and integration channels}
