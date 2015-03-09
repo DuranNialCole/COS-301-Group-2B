@@ -143,7 +143,35 @@
 					\item The Buzz system must be integrated seamlessly with both the CS LDAP server (to retrieve class lists and student information) and the CS MySQL database to access course and module details.
 				\end{itemize}
 	\subsection{Architectural Constraints}		
+	The following architecture constraints have been introduced largely for maintainability reasons:
+\begin{enumerate}
+	\item The system must be developed using the following technologies
+	\begin{itemize}
+		\item The system must be developed using the Django web framework.
+		\item Persistence to a relational database must be done using the Object-Relational Mapper bundled with Django.
+		\item The unit tests should be developed using the Django unittest module.
+	\end{itemize}
 
+	\item The system must ultimately be deployed onto a Django application server running within the cs.up.ac.za Apache web server.
+	\item The system must be decoupled from the choice of database. The system will use the MySQL database.
+	\item The system must expose all system functionality as restful web services and hence may not have any application functionality within the presentation layer.
+	\item Web services must be published as either SOAP-based or Restful web services.
+\end{enumerate}
+
+Alternative Architectural Constraints:
+\begin{enumerate}
+	\item The system must be developed using the following technologies
+	\begin{itemize}
+		\item The system must be developed using the Java-Enterprise Edition (Java-EE) development platform and the Java Server Faces (JSF) architectural framework
+		\item Persistence to a relational database must be done by making use of the Java Persistence API (JPA) and the Java Persistence query language (JPQL)
+		\item The unit tests should be developed using using an appropriate unit test framework such as JUnit (a unit testing framework for the Java programming language).
+	\end{itemize}
+
+	\item The system must ultimately be deployed onto a GlassFish application server running on the cs.up.ac.za Apache web server.
+	\item The system must be decoupled from the choice of database. The system will use a MySQL database.
+	\item The system must expose all system functionality as restful web services and hence may not have any application functionality within the presentation layer.
+	\item Web services must be published as either SOAP-based or Restful web services.
+\end{enumerate}
 \section{Architectural patterns or styles}
 	\subsection{Layered Architectural Style}
 	\begin{itemize}
@@ -156,14 +184,14 @@
 			\item it improves performance and fault tolerance.
 			\item it increases testability.
 			\end{itemize}
-		\item The Buzz system can it's simplest be implemented across the following three layers:
+		\item The Buzz system can at its simplest be implemented across the following three layers:
 		\begin{enumerate}
 		\item Client access layer - Provides the front-end/interface through which the client interacts with the system
 		\item Business logic layer - Provides the back-end services
 		\item Infrastructure layer - Includes the framework upon which the system is built and provides integration with other systems
 		\end{enumerate}
 	\end{itemize}
-	\subsection{Virtual Machine Pattern}
+	\subsection{Virtual Machine Pattern *}
 	\begin{itemize}
 		\item The Buzz system must be portable to run on any computing platform.That is, the system must be able to run on home desktop, PCs on campus, and different mobile devices. It must also run on different web browsers on different operating systems.
 		\item Virtual machine pattern provides:
@@ -178,7 +206,7 @@
 		\item The server side is the back-end of the system which manages authentication via communication with CS LDAP, access to the persistence database, and the other background services. The aim of having the back-end managing the data is to achieve higher security.
 		\item The client side for the Buzz system will be a thin client in the form of a web interface and will simply handle input from the user and display appropriate output.
 	\end{itemize}
-	\subsection{N-tier/3-tier Architectural Style}
+	\subsection{N-tier/3-tier Architectural Style *}
 	\begin{itemize}
 		\item The N-tier/3-tier architectural style provide improved:
 		\begin{itemize}
