@@ -30,7 +30,7 @@
 \clearpage
 
 \newpage
-\section{Introduction} This section deals with the software architecture requirements of the Buzz system being designed. It handles all aspects of the system's design which form part of its non-functional requirements, in particular the requirements of the software architecture on which the application's functional aspects are developed.This includes:
+\section{Introduction} This section deals with the software architecture requirements of the Buzz system being designed. It handles all aspects of the system's design which form part of its non-functional requirements, in particular the requirements of the software architecture on which the application's functional aspects are developed. This includes:
 	\begin{itemize} 
 		\item The architectural scope.
 		\item Quality requirements.
@@ -156,6 +156,12 @@
 			\item it improves performance and fault tolerance.
 			\item it increases testability.
 			\end{itemize}
+		\item The Buzz system can it's simplest be implemented across the following three layers:
+		\begin{enumerate}
+		\item Client access layer - Provides the front-end/interface through which the client interacts with the system
+		\item Business logic layer - Provides the back-end services
+		\item Infrastructure layer - Includes the framework upon which the system is built and provides integration with other systems
+		\end{enumerate}
 	\end{itemize}
 	\subsection{Virtual Machine Pattern}
 	\begin{itemize}
@@ -164,12 +170,13 @@
 		\begin{itemize}
 			\item portability
 			\item pluggability
-		\end{itemize}		 
+		\end{itemize}
 	\end{itemize}
 	\subsection{Client/Server Architectural Style}
 	\begin{itemize}
-		\item Client/Server allows multiple clients to access the system using N-tier 		architectural style.The benefit of using N-tier architectural style is that it improves the scalability of the system.
-		\item The server side is the back-end of the system which manages the centralized data and access to the database from CS LDAP. The aim of having the back-end manages the data is to achieve higher security.
+		\item Client/Server allows multiple clients to access the system using N-tier architectural style. The benefit of using N-tier architectural style is that it improves the scalability of the system.
+		\item The server side is the back-end of the system which manages authentication via communication with CS LDAP, access to the persistence database, and the other background services. The aim of having the back-end managing the data is to achieve higher security.
+		\item The client side for the Buzz system will be a thin client in the form of a web interface and will simply handle input from the user and display appropriate output.
 	\end{itemize}
 	\subsection{N-tier/3-tier Architectural Style}
 	\begin{itemize}
