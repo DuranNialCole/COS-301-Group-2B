@@ -30,7 +30,7 @@
 \clearpage
 
 \newpage
-\section{Introduction} This section deals with the software architecture requirements of the Buzz system being designed. It handles all aspects of the system's design which form part of its non-functional requirements, in particular the requirements of the software architecture on which the application's functional aspects are developed.This includes:
+\section{Introduction} This section deals with the software architecture requirements of the Buzz system being designed. It handles all aspects of the system's design which form part of its non-functional requirements, in particular the requirements of the software architecture on which the application's functional aspects are developed. This includes:
 	\begin{itemize} 
 		\item The architectural scope.
 		\item Quality requirements.
@@ -156,6 +156,12 @@
 			\item it improves performance and fault tolerance.
 			\item it increases testability.
 			\end{itemize}
+		\item The Buzz system can it's simplest be implemented across the following three layers:
+		\begin{enumerate}
+		\item Client access layer - Provides the front-end/interface through which the client interacts with the system
+		\item Business logic layer - Provides the back-end services
+		\item Infrastructure layer - Includes the framework upon which the system is built and provides integration with other systems
+		\end{enumerate}
 	\end{itemize}
 	\subsection{Virtual Machine Pattern}
 	\begin{itemize}
