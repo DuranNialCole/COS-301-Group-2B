@@ -170,12 +170,13 @@
 		\begin{itemize}
 			\item portability
 			\item pluggability
-		\end{itemize}		 
+		\end{itemize}
 	\end{itemize}
 	\subsection{Client/Server Architectural Style}
 	\begin{itemize}
-		\item Client/Server allows multiple clients to access the system using N-tier 		architectural style.The benefit of using N-tier architectural style is that it improves the scalability of the system.
-		\item The server side is the back-end of the system which manages the centralized data and access to the database from CS LDAP. The aim of having the back-end manages the data is to achieve higher security.
+		\item Client/Server allows multiple clients to access the system using N-tier architectural style. The benefit of using N-tier architectural style is that it improves the scalability of the system.
+		\item The server side is the back-end of the system which manages authentication via communication with CS LDAP, access to the persistence database, and the other background services. The aim of having the back-end managing the data is to achieve higher security.
+		\item The client side for the Buzz system will be a thin client in the form of a web interface and will simply handle input from the user and display appropriate output.
 	\end{itemize}
 	\subsection{N-tier/3-tier Architectural Style}
 	\begin{itemize}
