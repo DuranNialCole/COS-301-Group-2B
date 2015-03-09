@@ -45,6 +45,16 @@
 \newpage
 \section{Architecture Requirements}
 	\subsection{Architectural Scope}
+	The following responsibilities need to be addressed by the software architecture:
+	\begin{enumerate}
+		\item To be able to host and provide an execution environment for the services/business logic of the Buzz system
+		\item To provide an infrastructure for a web access channel
+		\item To provide an infrastructure that provides a mobile access channel
+		\item To provide an infrastructure that handles persisting and provides access to domain objects
+		\item To integrate with a LDAP repository.
+		\item To provide an infrastructure that allows module plugability in such a way that core modules are independent from add on modules and vice-versa
+		\item To provide an infrastructure to integrate the system with other systems such as the CS department's website and the Hamster marking system
+	\end{enumerate}
 	\subsection{Quality Requirements}
 		\subsubsection{Scalability}
 			\begin{itemize} 
@@ -331,13 +341,13 @@ Alternative Architectural Constraints:
 	\begin{itemize}
 		
 		
-		\subsubsection Removal from Service
+		\item Removal from Service\\
 		Places a system component in an out-of-service state that allows for mitigating potential system failures before their accumulation affects the service.
 		
-		\subsubsection Transactions
+		\item Transactions\\
 		Ensures a consistent and durable system state. The Atomic Commit Protocol can be used and it is most commonly implemented by the two-phase commit.
 		
-		\subsubsection Process Monitor
+		\item Process Monitor\\
 		Monitors the state of health of a system process and ensures that the system is operating within its nominal operating parameters.
 	\end{itemize}
 
