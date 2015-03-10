@@ -140,24 +140,7 @@
 					\item Must be able to integrate with the existing CS website.
 				\end{itemize}
 				
-	\subsection{Integration and access channel requirements}
-				\subsubsection{Human access channels}
-				\begin{itemize}
-					\item Must run on all major web browsers (Mozilla Firefox, Microsoft Internet Explorer, Opera, Google Chrome, Safari)
-					\item Must be able to access from any computer regardless which operating system it uses ( e.g. Windows, Linux, etc.), tablets and phones (i.e. mobile/Android devices)
-					\item The user can easily use the Buzz system to communicate with both the CS LDAP server (when registering and loging on and off of their profiles) and the CS MySQL database to access course and module details.
-					\item Must conform to specific web standards such as proper use of:
-					\begin{itemize}
-						\item Protocols such as HTTP (Hypertext Transfer Protocol) and IP (Internet Protocol).
-						\item Stylesheets (especially Cascading Style Sheets (CSS).
-						\item Markup languages, such as Hypertext Markup Language (HTML) and Extensible Hypertext Markup Language (XHTML).
-					\end{itemize}
-				\end{itemize}
-				\subsubsection{System access channels}
-				\begin{itemize}
-					\item The Buzz system can be accessed through a direct web page (i.e. using http) or through a link from the CS web page.
-					\item The Buzz system must easily communicate with both the CS LDAP server (to retrieve class lists and student information) and the CS MySQL database to access course and module details.
-				\end{itemize}
+
 	\subsection{Architectural Constraints}		
 	The following architecture constraints have been imposed:
 \begin{enumerate}
@@ -348,6 +331,17 @@ independently by different teams
 \section{Use of reference architectures and frameworks}
 \newpage
 \section{Access and integration channels}
+	\subsubsection{Human access channels}
+		\begin{itemize}
+			\item Must run on all major web browsers (Mozilla Firefox, Microsoft Internet Explorer, Opera, Google Chrome, Safari)
+			\item Must be able to access from any computer regardless which operating system it uses ( e.g. Windows, Linux, etc.), tablets and phones (i.e. mobile/Android devices)
+			\item The user can easily use the Buzz system to communicate with both the CS LDAP server (when registering and logging on and off of their profiles) and the CS MySQL database to access course and module details.
+		\end{itemize}
+		\subsubsection{System access channels}
+			\begin{itemize}
+				\item The Buzz system can be accessed through a direct web page (i.e. using http) or through a link from the CS web page.
+				\item The Buzz system must easily communicate with both the CS LDAP server (to retrieve class lists and student information) and the CS MySQL database to access course and module details.
+			\end{itemize}
 	\subsection{Integration Channel Used}
 		\subsubsection{REST - Representational State Transfer}
 		\begin{itemize}
@@ -363,13 +357,7 @@ independently by different teams
 	\subsection{Protocols}
 		\subsubsection{HTTP - Hypertext Transfer Protocol}
 			\begin{itemize}
-				\item Standard web language.
-				\item Easy to write pages.
-			\end{itemize}
-		\subsubsection{PHP}
-			\begin{itemize}
-				\item Allows dynamic pages to be built.
-				\item Easy integration of JavaScript and HTML with PHP functions.
+				\item Used to send web pages from server to workstations.  
 			\end{itemize}
 		\subsubsection{IP - Internet Protocol}	
 			\begin{itemize}
@@ -386,21 +374,66 @@ independently by different teams
 				\item Alternative to SSL
 				\item Newer and more secure version of SSL.
 			\end{itemize}
+
 		
 \section{Technologies}
 	\subsection{Programming technologies}
-		\begin{itemize}
-			\item AJAX (Asynchronous JavaScript and XML).
-			\item The JQuery library which will be used with our JavaScript.
-			\item Python (used in the Django Framework).
-			\item Java programming language 
-		\end{itemize}
+		\subsubsection{Java EE}
+			\begin{itemize}
+				\item Java is a platform independent language which can be run on any operating system thus allowing us to run website of a Linux machine.
+				\item Contains multiple libraries that can be used that can provide functionality to the system. 
+			\end{itemize}
+			
+		\subsubsection{JSF - Java Server Faces}
+			\begin{itemize}
+				\item Allows Component based user Interfaces.
+				\item Gives the ability to create stateless views, page flows and portable resource contracts
+			\end{itemize}
+			
+		\subsubsection{JPA - Java Persistence API}
+			\begin{itemize}
+				\item Describes how relational data is managed.
+				\item Supports embedded objects.
+				\item Allows shared objects to be cached.
+			\end{itemize}
+			
+		\subsubsection{JPQL - Java Persistence Query Language}
+			\begin{itemize}
+				\item Structured query language is used to query the database.
+				\item Allows the ability to get very specific data and preform operations on returned data by using query language.
+				\item Provides the functionality of query caching.
+			\end{itemize}						
+		
+		\subsubsection{Maven}
+			\begin{itemize}
+				 \item Uses Project Object Model.
+				 \item Allows project documentation and reporting to be managed by central piece of data .
+				 \item Provides build environment.
+			\end{itemize}
+			
+		\subsubsection{AJAX - Asynchronous JavaScript and XML}
+			\begin{itemize}
+				\item JavaScript
+					\begin{itemize}
+						\item Provides the functionality to edit the Document Object Model(DOM).
+						\item JQuery will be included as a JavaScript library, allowing the use of extended functions and methods.
+					\end{itemize}
+				\item XML - eXtensible Mark-up Language
+					\begin{itemize}
+						\item Platform independent.
+						\item was created to store and transfer stored data.
+						\item Easily parsing.
+					\end{itemize}
+			\end{itemize}
 	\subsection{Web technologies}
-		\begin{itemize}
-			\item HTML
-		\end{itemize}
-	\subsection{Other technologies}
-		\begin{itemize}
-			\item
-		\end{itemize}
+		
+		\subsubsection{HTML - Hypertext Mark-up Language/XHTML - eXtensible Hypertext Mark-up Language}	
+			\begin{itemize}
+				\item Standard web language.
+				\item Easy to write pages.
+			\end{itemize}
+		\subsubsection{CSS - Cascading Style Sheet}
+			\begin{itemize}
+				\item Used to provide styling to HTML/XHTML web pages.
+			\end{itemize}
 \end{document}
