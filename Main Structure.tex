@@ -174,23 +174,23 @@
 	\subsection{Layered Architectural Style}
 	\begin{itemize}
 		\item The Buzz system can at its simplest be implemented across the following three layers:
-		\begin{enumerate}
-		\item Client access layer
-		\begin{itemize}
-		\item Provides the front-end/interface through which the client interacts with the system
-		\item Thin client in the form of a web interface which will simply handle input from the user and display appropriate output
-		\end{itemize}
-		\item Business logic layer
-		\begin{itemize}
-		\item Provides the back-end services of the system
-		\item Manages authentication via communication with CS LDAP
-		\item Manages access to the persistence database
-		\item The aim of having the back-end managing the data is to achieve higher security.
-		\end{itemize}
-		\item Infrastructure layer
-		\begin{itemize}
-		\item Includes the framework upon which the system is built and provides integration with other systems
-		\end{itemize}
+			\begin{enumerate}
+			\item Client access layer
+				\begin{itemize}
+				\item Provides the front-end/interface through which the client interacts with the system
+				\item Thin client in the form of a web interface which will simply handle input from the user and display appropriate output
+				\end{itemize}
+			\item Business logic layer
+				\begin{itemize}
+				\item Provides the back-end services of the system
+				\item Manages authentication via communication with CS LDAP
+				\item Manages access to the persistence database
+				\item The aim of having the back-end managing the data is to achieve higher security.
+				\end{itemize}
+			\item Infrastructure layer
+			\begin{itemize}
+				\item Includes the framework upon which the system is built and provides integration with other systems
+				\end{itemize}
 		\end{enumerate}		
 		\item The main benefits of layered architectural style:
 			\begin{itemize}
@@ -202,9 +202,6 @@ independently by different teams
 			\end{itemize}
 	\end{itemize}
 \section{Architectural tactics or strategies}
-
-	
-	
 	\subsection{Fault Detection}
 		\subsubsection{Ping / Echo}			
 			\begin{itemize}		
