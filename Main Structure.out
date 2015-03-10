@@ -14,7 +14,7 @@
 \BOOKMARK [3][-]{subsubsection.2.2.10}{Integrability}{subsection.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.3}{Integration and access channel requirements}{section.2}% 15
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Human access channels}{subsection.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.2}{System access and integration channels}{subsection.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.2}{System access channels}{subsection.2.3}% 17
 \BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 18
 \BOOKMARK [1][-]{section.3}{Architectural patterns or styles}{}% 19
 \BOOKMARK [2][-]{subsection.3.1}{Layered Architectural Style}{section.3}% 20
@@ -30,17 +30,20 @@
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Preparation and Repair}{subsection.4.2}% 30
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Reintroduction}{subsection.4.2}% 31
 \BOOKMARK [2][-]{subsection.4.3}{Fault Prevention}{section.4}% 32
-\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 33
-\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 34
-\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 35
-\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 36
-\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 37
-\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 38
-\BOOKMARK [3][-]{subsubsection.6.2.2}{PHP}{subsection.6.2}% 39
-\BOOKMARK [3][-]{subsubsection.6.2.3}{IP - Internet Protocol}{subsection.6.2}% 40
-\BOOKMARK [3][-]{subsubsection.6.2.4}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 41
-\BOOKMARK [3][-]{subsubsection.6.2.5}{TSL - Transport Layer Security}{subsection.6.2}% 42
-\BOOKMARK [1][-]{section.7}{Technologies}{}% 43
-\BOOKMARK [2][-]{subsection.7.1}{Programming technologies}{section.7}% 44
-\BOOKMARK [2][-]{subsection.7.2}{Web technologies}{section.7}% 45
-\BOOKMARK [2][-]{subsection.7.3}{Other technologies}{section.7}% 46
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Removal from Service}{subsection.4.3}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Transactions}{subsection.4.3}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Process Monitor}{subsection.4.3}% 35
+\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 36
+\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 37
+\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 38
+\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 39
+\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 40
+\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 41
+\BOOKMARK [3][-]{subsubsection.6.2.2}{PHP}{subsection.6.2}% 42
+\BOOKMARK [3][-]{subsubsection.6.2.3}{IP - Internet Protocol}{subsection.6.2}% 43
+\BOOKMARK [3][-]{subsubsection.6.2.4}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 44
+\BOOKMARK [3][-]{subsubsection.6.2.5}{TSL - Transport Layer Security}{subsection.6.2}% 45
+\BOOKMARK [1][-]{section.7}{Technologies}{}% 46
+\BOOKMARK [2][-]{subsection.7.1}{Programming technologies}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.2}{Web technologies}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.3}{Other technologies}{section.7}% 49

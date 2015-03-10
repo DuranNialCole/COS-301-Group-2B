@@ -337,18 +337,34 @@ Alternative Architectural Constraints:
 	\end{itemize}
 	
 	\subsection{Fault Prevention}
-	\begin{itemize}
+		
+		\subsubsection{Removal from Service}
+		\begin{itemize}		
+			\item Places a system component in an out-of-service state that allows for mitigating potential system failures before their accumulation affects the service.
+			\item The quality requirements addressed:
+			\begin{itemize}
+				\item 
+			\end{itemize}		
+		\end{itemize}
+		
+		\subsubsection{Transactions}
+		\begin{itemize}
+			\item Ensures a consistent and durable system state. The Atomic Commit Protocol can be used and it is most commonly implemented by the two-phase commit.
+			\item The quality requirements addressed:
+			\begin{itemize}
+				\item 
+			\end{itemize}
+		\end{itemize}
 		
 		
-		\item Removal from Service\\
-		Places a system component in an out-of-service state that allows for mitigating potential system failures before their accumulation affects the service.
-		
-		\item Transactions\\
-		Ensures a consistent and durable system state. The Atomic Commit Protocol can be used and it is most commonly implemented by the two-phase commit.
-		
-		\item Process Monitor\\
-		Monitors the state of health of a system process and ensures that the system is operating within its nominal operating parameters.
-	\end{itemize}
+		\subsubsection{Process Monitor}
+		\begin{itemize}
+			\item Monitors the state of health of a system process and ensures that the system is operating within its nominal operating parameters.
+			\item The quality requirements addressed:
+			\begin{itemize}
+				\item 
+			\end{itemize}
+		\end{itemize}
 
 
 
