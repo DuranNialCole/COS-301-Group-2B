@@ -1,0 +1,44 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Architecture Requirements}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architectural Scope}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Quality Requirements}{2}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Critical:}{2}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Important:}{3}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Nice to have:}{5}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Architectural Constraints}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Architectural patterns or styles}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Layered Architectural Style}{6}{subsection.3.1}
+\contentsline {section}{\numberline {4}Architectural tactics or strategies}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fault Detection}{7}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Ping / Echo}{7}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}System Monitor}{8}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3} Exception Detection }{8}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Fault Recovery}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Preparation and Repair}{9}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Reintroduction}{10}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Fault Prevention}{11}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Removal from Service}{11}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Transactions}{11}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Process Monitor}{11}{subsubsection.4.3.3}
+\contentsline {section}{\numberline {5}Use of reference architectures and frameworks}{11}{section.5}
+\contentsline {section}{\numberline {6}Access and integration channels}{12}{section.6}
+\contentsline {subsubsection}{\numberline {6.0.4}Human access channels}{12}{subsubsection.6.0.4}
+\contentsline {subsubsection}{\numberline {6.0.5}System access channels}{12}{subsubsection.6.0.5}
+\contentsline {subsection}{\numberline {6.1}Integration Channel Used}{12}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}REST - Representational State Transfer}{12}{subsubsection.6.1.1}
+\contentsline {subsection}{\numberline {6.2}Protocols}{13}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}HTTP - Hypertext Transfer Protocol}{13}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}IP - Internet Protocol}{13}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}SMTP - Simple Mail Transfer Protocol}{13}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}TSL - Transport Layer Security}{13}{subsubsection.6.2.4}
+\contentsline {section}{\numberline {7}Technologies}{13}{section.7}
+\contentsline {subsection}{\numberline {7.1}Programming technologies}{13}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Java EE}{13}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}JSF - Java Server Faces}{14}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}JPA - Java Persistence API}{14}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.4}JPQL - Java Persistence Query Language}{14}{subsubsection.7.1.4}
+\contentsline {subsubsection}{\numberline {7.1.5}Maven}{14}{subsubsection.7.1.5}
+\contentsline {subsubsection}{\numberline {7.1.6}AJAX - Asynchronous JavaScript and XML}{14}{subsubsection.7.1.6}
+\contentsline {subsection}{\numberline {7.2}Web technologies}{15}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}HTML - Hypertext Mark-up Language/XHTML - eXtensible Hypertext Mark-up Language}{15}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}CSS - Cascading Style Sheet}{15}{subsubsection.7.2.2}

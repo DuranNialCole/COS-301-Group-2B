@@ -2,45 +2,43 @@
 \BOOKMARK [1][-]{section.2}{Architecture Requirements}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Architectural Scope}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Quality Requirements}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Scalability}{subsection.2.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Performance requirements}{subsection.2.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Maintainability}{subsection.2.2}% 7
-\BOOKMARK [3][-]{subsubsection.2.2.4}{Availability}{subsection.2.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.2.5}{Reliability}{subsection.2.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.2.6}{Security}{subsection.2.2}% 10
-\BOOKMARK [3][-]{subsubsection.2.2.7}{Monitorability and Auditability}{subsection.2.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.2.8}{Testability}{subsection.2.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.2.9}{Usability}{subsection.2.2}% 13
-\BOOKMARK [3][-]{subsubsection.2.2.10}{Integrability}{subsection.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.3}{Integration and access channel requirements}{section.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Human access channels}{subsection.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.2}{System access channels}{subsection.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 18
-\BOOKMARK [1][-]{section.3}{Architectural patterns or styles}{}% 19
-\BOOKMARK [2][-]{subsection.3.1}{Layered Architectural Style}{section.3}% 20
-\BOOKMARK [1][-]{section.4}{Architectural tactics or strategies}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{Fault Detection}{section.4}% 22
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Ping / Echo}{subsection.4.1}% 23
-\BOOKMARK [3][-]{subsubsection.4.1.2}{System Monitor}{subsection.4.1}% 24
-\BOOKMARK [3][-]{subsubsection.4.1.3}{ Exception Detection }{subsection.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.2}{Fault Recovery}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Preparation and Repair}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Reintroduction}{subsection.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.3}{Fault Prevention}{section.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Removal from Service}{subsection.4.3}% 30
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Transactions}{subsection.4.3}% 31
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Process Monitor}{subsection.4.3}% 32
-\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 33
-\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 34
-\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 35
-\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 36
-\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 37
-\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 38
-\BOOKMARK [3][-]{subsubsection.6.2.2}{PHP}{subsection.6.2}% 39
-\BOOKMARK [3][-]{subsubsection.6.2.3}{IP - Internet Protocol}{subsection.6.2}% 40
-\BOOKMARK [3][-]{subsubsection.6.2.4}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 41
-\BOOKMARK [3][-]{subsubsection.6.2.5}{TSL - Transport Layer Security}{subsection.6.2}% 42
-\BOOKMARK [1][-]{section.7}{Technologies}{}% 43
-\BOOKMARK [2][-]{subsection.7.1}{Programming technologies}{section.7}% 44
-\BOOKMARK [2][-]{subsection.7.2}{Web technologies}{section.7}% 45
-\BOOKMARK [2][-]{subsection.7.3}{Other technologies}{section.7}% 46
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Critical:}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Important:}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Nice to have:}{subsection.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Architectural Constraints}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Architectural patterns or styles}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Layered Architectural Style}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Architectural tactics or strategies}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Fault Detection}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Ping / Echo}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.2}{System Monitor}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.3}{ Exception Detection }{subsection.4.1}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Fault Recovery}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Preparation and Repair}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Reintroduction}{subsection.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Fault Prevention}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Removal from Service}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Transactions}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Process Monitor}{subsection.4.3}% 22
+\BOOKMARK [1][-]{section.5}{Use of reference architectures and frameworks}{}% 23
+\BOOKMARK [1][-]{section.6}{Access and integration channels}{}% 24
+\BOOKMARK [2][-]{subsubsection.6.0.4}{Human access channels}{section.6}% 25
+\BOOKMARK [3][-]{subsubsection.6.0.5}{System access channels}{subsubsection.6.0.4}% 26
+\BOOKMARK [2][-]{subsection.6.1}{Integration Channel Used}{section.6}% 27
+\BOOKMARK [3][-]{subsubsection.6.1.1}{REST - Representational State Transfer}{subsection.6.1}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Protocols}{section.6}% 29
+\BOOKMARK [3][-]{subsubsection.6.2.1}{HTTP - Hypertext Transfer Protocol}{subsection.6.2}% 30
+\BOOKMARK [3][-]{subsubsection.6.2.2}{IP - Internet Protocol}{subsection.6.2}% 31
+\BOOKMARK [3][-]{subsubsection.6.2.3}{SMTP - Simple Mail Transfer Protocol}{subsection.6.2}% 32
+\BOOKMARK [3][-]{subsubsection.6.2.4}{TSL - Transport Layer Security}{subsection.6.2}% 33
+\BOOKMARK [1][-]{section.7}{Technologies}{}% 34
+\BOOKMARK [2][-]{subsection.7.1}{Programming technologies}{section.7}% 35
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Java EE}{subsection.7.1}% 36
+\BOOKMARK [3][-]{subsubsection.7.1.2}{JSF - Java Server Faces}{subsection.7.1}% 37
+\BOOKMARK [3][-]{subsubsection.7.1.3}{JPA - Java Persistence API}{subsection.7.1}% 38
+\BOOKMARK [3][-]{subsubsection.7.1.4}{JPQL - Java Persistence Query Language}{subsection.7.1}% 39
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Maven}{subsection.7.1}% 40
+\BOOKMARK [3][-]{subsubsection.7.1.6}{AJAX - Asynchronous JavaScript and XML}{subsection.7.1}% 41
+\BOOKMARK [2][-]{subsection.7.2}{Web technologies}{section.7}% 42
+\BOOKMARK [3][-]{subsubsection.7.2.1}{HTML - Hypertext Mark-up Language/XHTML - eXtensible Hypertext Mark-up Language}{subsection.7.2}% 43
+\BOOKMARK [3][-]{subsubsection.7.2.2}{CSS - Cascading Style Sheet}{subsection.7.2}% 44

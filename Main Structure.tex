@@ -66,80 +66,86 @@
 		\item To provide an infrastructure to integrate the system with other systems such as the CS department's website and the Hamster marking system
 	\end{enumerate}
 	\subsection{Quality Requirements}
-		\subsubsection{Scalability}
-			\begin{itemize} 
-				\item Manage resource demand to ensure that every user of the Buzz system will be presented with a satisfactory experience.
-				\item Scale out resources to ensure that resource demand be met.
-				\item The system must be able to operate effectively under the load of all registered students within the department of Computer Science and guest users.
-			\end{itemize}
-			
-		\subsubsection{Performance requirements}
-			\begin{itemize}
-				\item The Buzz system must have a large throughput number such that the rate at which incoming requests are completed is high.
-				\item Minimize the response time of requests from the Buzz system to ensure that the Buzz system would work efficiently.
-			\end{itemize}
-		\subsubsection{Maintainability}
-			\begin{itemize}
-					\item Rollback to a previous state in which the Buzz system was safe. Lets us recover from an error or a system fault.
-					\item Corrective maintenance is to correct discovered problems in the Buzz system after the system has been implemented.
-					\item Perfective maintenance is to improve performance or maintainability after the Buzz system has been implemented.
-			\end{itemize}
-		\subsubsection{Availability}
-		\begin{itemize}
-			\item Prevent faults in the Buzz system to ensure that there is no system downtime. This will increase the availability of the Buzz system.
-			\item Detect faults before the fault can cause harm to the Buzz system.
-			\item Recover from faults if it could not be prevented to ensure that the Buzz system will be available once again.
-			\item Cross platform functionality.
-			\item Cross browser functionality.
-		\end{itemize}
-		
-		\subsubsection{Reliability}
-		\begin{itemize}
-			\item Ensure that the Buzz system is reliable in such a way that all interaction with the Buzz system will give the required results.
-			\item Prevent faults.
-			\item Detect faults.
-			\item Recover from faults.
-		\end{itemize}
 	
-		\subsubsection{Security}
-			\begin{itemize}
-				\item Minimize access and permissions given to users who do not have the required privileges.
-				\item All communication of sensitive data must be done securely through encryption and secure channels such that unwanted users are unable to compromise the Buzz system.
-				\item All system functionality is only accessible to users who can be successfully authenticated through the LDAP system used by the department of Computer Science.
-			\end{itemize}
-		\subsubsection{Monitorability and Auditability}
-			\begin{itemize}
-				\item Each action on the system must be recorded in an audit log that can later be viewed and queried.
-				\item Information to be recorded must include:
-				\begin{itemize}
-					\item The identity of the individual carrying out the action.
-					\item A description of the action.
-					\item When the action was carried out.
-				\end{itemize}
-			\end{itemize}
-		\subsubsection{Testability}
-			\begin{itemize}
-				\item The Buzz system must use test driven development.
-				\item Each service provided by the system must be testable through a unit test that tests:
-				\begin{itemize}
-					\item That the service is provided if all pre-conditions are met, and
-					\item That all post-conditions hold true once the service has been provided.
-				\end{itemize}
-			\end{itemize}
-		\subsubsection{Usability}
-			\begin{itemize}
-				\item The Buzz system must be efficient to use.
-				\item The Buzz system must be easy to use.
-				\item Easy to navigate between the system's various web pages.
-				\item The average student should be able to use the system without any prior training.
-				\item Initially only English needs to be supported, but the system must allow for translations to the other official languages of the University of Pretoria to be added at a later stage.
-			\end{itemize}
-		\subsubsection{Integrability}
-				\begin{itemize}
-					\item Must be able to integrate with existing systems and systems which may want to be added.
-					\item Must be able to integrate with the existing CS website.
-				\end{itemize}
-				
+	The following quality requirements are in order of the most important to least important.	
+	\subsubsection{Critical:}
+	\subsubsection*{Usability}
+	The average student should be able to use the Buzz system without any prior training and not be discouraged to use the system again. 
+	\begin{itemize}
+		\item The Buzz system interface must be efficient and easy to use and navigate.
+		\item Initially only English needs to be supported, but the system must allow for translations to the other official languages of the University of Pretoria to be added at a later stage.
+	\end{itemize}
+	
+	\subsubsection*{Scalability}
+	It is important that a large number of users can be accommodated by the Buzz system.
+	\begin{itemize} 
+		\item Manage resource demand to ensure that every user of the Buzz system will be presented with a satisfactory experience.
+		\item Scale out resources to ensure that resource demand be met.
+		\item The system must be able to operate effectively under the load of all registered students within the department of Computer Science and guest users.
+	\end{itemize}
+	
+	
+	\subsubsection{Important:}
+	\subsubsection*{Availability}
+	It is important that the Buzz system is always accessible by the user.
+	\begin{itemize}
+		\item Adequately test each module of the Buzz system to minimize downtime to ensure that the system can function even if a module is down.
+		\item The Buzz system is accessible by multiple platforms and browsers.
+	\end{itemize}
+	
+	\subsubsection*{Integrability}
+	The Buzz system must be able to communicate with the existing CS modules without changing the Buzz system.
+	\begin{itemize}
+		\item Must be able to integrate with existing systems and systems which may want to be added.
+		\item Must be able to integrate with the existing CS website.
+	\end{itemize}
+	
+	\subsubsection*{Maintainability}
+	The Buzz system must be maintained to keep the system in as safe state.
+	\begin{itemize}
+		\item Rollback to a previous state in which the Buzz system was safe. Lets us recover from an error or a system fault.
+		\item Corrective maintenance is to correct discovered problems in the Buzz system after the system has been implemented.
+		\item Perfective maintenance is to improve performance or maintainability after the Buzz system has been implemented.
+	\end{itemize}
+	
+	\subsubsection*{Testability}
+	The modules of the Buzz system must be tested thoroughly before they are deployed to the final system.
+	\begin{itemize}
+		\item The Buzz system must use test driven development.
+		\item Each service provided by the system must be testable through a unit test that tests:
+		\begin{itemize}
+			\item That the service is provided if all pre-conditions are met, and
+			\item That all post-conditions hold true once the service has been provided.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection*{Monitorability and Auditability}
+	The Buzz system must keep track of system and user activities that can be audited at a later stage.
+	\begin{itemize}
+		\item Each action on the system must be recorded in an audit log that can later be viewed and queried.
+		\item Information to be recorded must include:
+		\begin{itemize}
+			\item The identity of the individual carrying out the action.
+			\item A description of the action.
+			\item When the action was carried out.
+		\end{itemize}						
+	\end{itemize}
+	\subsubsection{Nice to have:}
+	
+	\subsubsection*{Security}
+	Sensitive information of the users must be kept secure. 
+	\begin{itemize}
+		\item Minimize access and permissions given to users who do not have the required privileges.
+		\item All communication of sensitive data must be done securely through encryption and secure channels such that unwanted users are unable to compromise the Buzz system.
+		\item All system functionality is only accessible to users who can be successfully authenticated through the LDAP system used by the department of Computer Science.
+	\end{itemize}		
+	
+	\subsubsection*{Performance requirements}
+	Minimize the response time of requests from the Buzz system to ensure that the Buzz system would work efficiently.
+	\begin{itemize}
+		\item The Buzz system must have a large throughput number such that the rate at which incoming requests are completed is high.
+	\end{itemize}
+					
 
 	\subsection{Architectural Constraints}		
 	The following architecture constraints have been imposed:
