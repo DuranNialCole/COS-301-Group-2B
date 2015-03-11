@@ -280,36 +280,36 @@ independently by different teams
 		\end{itemize}
 
 \section{Use of reference architectures and frameworks}
-All referenced architectures and frameworks are further described within the technology section. The technologies section also describes why the use of these technologies are useful and some of the benefits they provide.
-	\subsection{Referenced Architectures}
+	\begin{itemize}
+		\item The reference architecture that was selected is Java Platform Enterprise Edition (Java EE). This architecture was chosen because our system is based on a layered architecture. The layered architecture thus further allows the following quality requirements to be addressed:
 		\begin{itemize}
-			\item Java Platform Enterprise Edition (Java EE) which may make use of:
-				\begin{itemize}
-					\item Java Server Faces (JSF)
-					\item Java Persistence API (JPA)
-					\item Java Persistence Query Language (JPQL)
-				\end{itemize}
-			\item Maven
-				\begin{itemize}
-					\item 
-				\end{itemize}
+			\item Usability
+			\item Maintainability
+			\item Testability
+		\end{itemize}		 
+	\end{itemize}
 			
-		\end{itemize}
-	\subsection{Referenced Frameworks}
-		\begin{itemize}
-			\item JUnit, which will be used in testing the system
-		\end{itemize}
 \section{Access and integration channels}
 	\subsubsection{Human access channels}
 		\begin{itemize}
 			\item Must run on all major web browsers (Mozilla Firefox, Microsoft Internet Explorer, Opera, Google Chrome, Safari)
 			\item Must be able to access from any computer regardless which operating system it uses ( e.g. Windows, Linux, etc.), tablets and phones (i.e. mobile/Android devices)
 			\item The user can easily use the Buzz system to communicate with both the CS LDAP server (when registering and logging on and off of their profiles) and the CS MySQL database to access course and module details.
+			\item Quality requirements addressed:
+				\begin{itemize}
+					\item Availability
+					\item Usability
+				\end{itemize}
 		\end{itemize}
 		\subsubsection{System access channels}
 			\begin{itemize}
 				\item The Buzz system can be accessed through a direct web page (i.e. using http) or through a link from the CS web page.
 				\item The Buzz system must easily communicate with both the CS LDAP server (to retrieve class lists and student information) and the CS MySQL database to access course and module details.
+					\item Quality requirements addressed:
+				\begin{itemize}
+					\item Scalability
+					\item Security
+				\end{itemize}
 			\end{itemize}
 	\subsection{Integration Channel Used}
 		\subsubsection{REST - Representational State Transfer}
@@ -321,7 +321,12 @@ All referenced architectures and frameworks are further described within the tec
 					\item faster parsing.				
 				\end{itemize}			 
 			\item Better performance and scalability with the ability to cache reads.
-			\item Protocol Independent, can use any protocol which has a standardised URI scheme.		
+			\item Protocol Independent, can use any protocol which has a standardised Uniform Resource Identifier (URI) scheme. URI can further be used to detect plagiarism, tags and foul language within posts.
+			\item Quality requirements addressed:
+			\begin{itemize}
+				\item Integrability
+				\item Maintainability				
+			\end{itemize}		
 		\end{itemize}
 	\subsection{Protocols}
 		\subsubsection{HTTP - Hypertext Transfer Protocol}
@@ -340,7 +345,7 @@ All referenced architectures and frameworks are further described within the tec
 			\end{itemize}
 		\subsubsection{TSL - Transport Layer Security}
 			\begin{itemize}
-				\item Alternative to SSL
+				\item Alternative to SSL.
 				\item Newer and more secure version of SSL.
 			\end{itemize}
 
@@ -356,12 +361,12 @@ All referenced architectures and frameworks are further described within the tec
 		\subsubsection{JSF - Java Server Faces}
 			\begin{itemize}
 				\item Allows Component based user Interfaces.
-				\item Gives the ability to create stateless views, page flows and portable resource contracts
+				\item Gives the ability to create stateless views, page flows and portable resource contracts.
 			\end{itemize}
 			
-		\subsubsection{JPA - Java Persistence API}
+		\subsubsection{OpenJPA - Open Java Persistence API}
 			\begin{itemize}
-				\item Describes how relational data is managed.
+				\item Describes how object relational data is managed, which further increases performance and scalability.
 				\item Supports embedded objects.
 				\item Allows shared objects to be cached.
 			\end{itemize}
